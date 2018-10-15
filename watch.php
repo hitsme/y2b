@@ -1,4 +1,17 @@
 <?php
+session_start();
+if(isset($_POST['password']) && $_POST['password'] == 'admin'){
+    $_SESSION['ok'] = 1;
+    header('location:?');
+}
+if(!isset($_SESSION['ok'])){
+    exit('
+        <form method="post">
+            密码：<input type="password" name="password" />
+            <input type="submit" value="登陆" />
+        </form>
+    ');
+}
     include('./lib.php');
     if(!is_array($_GET)&&count($_GET)>0){
         exit();

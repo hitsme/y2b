@@ -1,4 +1,17 @@
 <?php
+session_start();
+if(isset($_POST['password']) && $_POST['password'] == 'admin'){
+    $_SESSION['ok'] = 1;
+    header('location:?');
+}
+if(!isset($_SESSION['ok'])){
+    exit('
+        <form method="post">
+            密码：<input type="password" name="password" />
+            <input type="submit" value="登陆" />
+        </form>
+    ');
+}
 if(!file_exists('./config.php')){
       header('Location: ./install.php');
       exit();   
