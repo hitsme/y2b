@@ -1,41 +1,12 @@
 <?php
 include("./lib.php");
 session_start();
-if(isset($_POST['password']) && $_POST['password'] == PASSWORD){
+if(isset($_POST['password']) &&$_POST['name']&& $_POST['password'] == PASSWORD&&$_POST['name'] == NAME){
     $_SESSION['ok'] = 1;
     header('location:?');
 }
 if(!isset($_SESSION['ok'])){
-    exit('<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="Login.css"/>
-</head>
-
-<body>
-
-    <p id="login">
-
-        <h1>Login</h1>
-
-        <form method="post">
-
-            <input type="text" required="required" placeholder="用户名" name="u"></input>
-
-            <input type="password" required="required" placeholder="密码" name="password"></input>
-
-            <button class="but" type="submit">登录</button>
-
-        </form>
-
-    </p>
-
-</body>
-
-</html>
-    ');
+    exit(LOGINHTML);
 }
 if(!file_exists('./config.php')){
       header('Location: ./install.php');
