@@ -1,6 +1,7 @@
 <?php
+include("./lib.php");
 session_start();
-if(isset($_POST['password']) && $_POST['password'] == 'admin'){
+if(isset($_POST['password']) && $_POST['password'] == PASSWORD){
     $_SESSION['ok'] = 1;
     header('location:?');
 }
@@ -16,7 +17,6 @@ if(!file_exists('./config.php')){
       header('Location: ./install.php');
       exit();   
 }
-include("./lib.php");
 $headtitle='首页'.'-'.SITE_NAME;
 include("./header.php");
 if(isset($_GET['v'])){
