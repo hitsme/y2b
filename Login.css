@@ -115,3 +115,14 @@ input{
     margin: 0;
 
 }
+.divForm{
+position: absolute;/*绝对定位*/
+width: 300px;
+height: 200px;
+
+text-align: center;/*(让div中的内容居中)*/
+top: 50%;
+left: 50%;
+margin-top: -200px;
+margin-left: -150px;
+}

@@ -14,10 +14,9 @@ if(!isset($_SESSION['ok'])){
     <link rel="stylesheet" type="text/css" href="Login.css"/>
 </head>
 <body>
-<center>
     <p id="login">
-    <h1>登陆</h1>
-    <form method="post" id="form" style="margin:0px auto;">
+   <h1 style="text-align: center">登陆</h1>
+   <form method="post" id="form" class="divForm">
         <input type="text" required="required" placeholder="用户名" name="name"></input>
         <br/>
         <input type="password" required="required" placeholder="密码" name="password"></input>
@@ -25,7 +24,6 @@ if(!isset($_SESSION['ok'])){
         <button type="submit" class="but">登陆</button>
     </form>
     </p>
-</center>
 </body>
 </html>');
 }
