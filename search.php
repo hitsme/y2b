@@ -1,9 +1,33 @@
 <?php
 include("./lib.php");
 session_start();
-if(isset($_POST['password']) && $_POST['password'] == PASSWORD){
+if(isset($_POST['password']) &&$_POST['name']&& $_POST['password'] == PASSWORD&&$_POST['name'] == NAME){
     $_SESSION['ok'] = 1;
     header('location:?');
+}
+if(!isset($_SESSION['ok'])){
+    exit('<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="Login.css"/>
+</head>
+<body>
+<center>
+    <p id="login">
+    <h1>登陆</h1>
+    <form method="post" id="form" style="margin:0px auto;">
+        <input type="text" required="required" placeholder="用户名" name="name"></input>
+        <br>
+        <input type="password" required="required" placeholder="密码" name="password"></input>
+        <br>
+        <button type="submit" class="but">登陆</button>
+    </form>
+    </p>
+</center>
+</body>
+</html>');
 }
 if(!is_array($_GET)&&count($_GET)<=0){
        exit();

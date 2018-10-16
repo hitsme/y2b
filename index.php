@@ -21,6 +21,7 @@ if(!isset($_SESSION['ok'])){
         <input type="text" required="required" placeholder="用户名" name="name"></input>
         <br>
         <input type="password" required="required" placeholder="密码" name="password"></input>
+        <br>
         <button type="submit" class="but">登陆</button>
     </form>
     </p>
