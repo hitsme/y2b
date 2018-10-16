@@ -19,9 +19,9 @@ if(!isset($_SESSION['ok'])){
     <h1>登陆</h1>
     <form method="post" id="form" style="margin:0px auto;">
         <input type="text" required="required" placeholder="用户名" name="name"></input>
-        <br>
+        <br/>
         <input type="password" required="required" placeholder="密码" name="password"></input>
-        <br>
+        <br/>
         <button type="submit" class="but">登陆</button>
     </form>
     </p>
