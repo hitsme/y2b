@@ -1,4 +1,5 @@
 <?php
+header("Content-type:text/html;charset=utf-8")£»
 define('ROOT_PART', Root_part());
 define('APIKEY', 'AIzaSyB5zY2fq6YRSMxF7HwGb8rEQ8VVRxiO6ps');
 define('GJ_CODE', 'HK');
