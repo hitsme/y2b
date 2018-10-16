@@ -7,10 +7,35 @@ if(isset($_POST['password']) && $_POST['password'] == PASSWORD){
 }
 if(!isset($_SESSION['ok'])){
     exit('
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="Login.css"/>
+</head>
+
+<body>
+
+    <p id="login">
+
+        <h1>Login</h1>
+
         <form method="post">
-            密码：<input type="password" name="password" />
-            <input type="submit" value="登陆" />
+
+            <input type="text" required="required" placeholder="用户名" name="u"></input>
+
+            <input type="password" required="required" placeholder="密码" name="password"></input>
+
+            <button class="but" type="submit">登录</button>
+
         </form>
+
+    </p>
+
+</body>
+
+</html>
     ');
 }
 if(!file_exists('./config.php')){

@@ -1,6 +1,7 @@
 <?php
+include('./lib.php');
 session_start();
-if(isset($_POST['password']) && $_POST['password'] == 'admin'){
+if(isset($_POST['password']) && $_POST['password'] == PASSWORD){
     $_SESSION['ok'] = 1;
     header('location:?');
 }
@@ -12,7 +13,6 @@ if(!isset($_SESSION['ok'])){
         </form>
     ');
 }
-    include('./lib.php');
     if(!is_array($_GET)&&count($_GET)>0){
         exit();
     }

@@ -1,8 +1,13 @@
 <?php
+include("./lib.php");
+session_start();
+if(isset($_POST['password']) && $_POST['password'] == PASSWORD){
+    $_SESSION['ok'] = 1;
+    header('location:?');
+}
 if(!is_array($_GET)&&count($_GET)<=0){
        exit();
     }
-include("./lib.php");
 $headtitle=$_GET["q"].'-'.SITE_NAME;;
 include("./header.php");
 $order=isset($_GET['order'])?$_GET['order']:'relevance';
