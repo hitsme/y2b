@@ -17,14 +17,20 @@ if(!isset($_SESSION['ok'])){
 <center>
     <p id="login">
     <h1>登陆</h1>
-    <form method="post" style="margin:0px auto;">
+    <form method="post" id="form" style="margin:0px auto;">
         <input type="text" required="required" placeholder="用户名" name="name"></input>
         <br>
         <input type="password" required="required" placeholder="密码" name="password"></input>
-        <button type="submit" class="but">登陆</button>
+        <button type="submit" onclick="sub()" class="but">登陆</button>
     </form>
     </p>
 </center>
+<script type="text/javascript">
+function sub() {
+    var f=document.getElementById("form");
+    f.submit();
+}
+</script>
 </body>
 </html>');
 }
