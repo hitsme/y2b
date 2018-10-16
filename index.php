@@ -6,8 +6,7 @@ if(isset($_POST['password']) && $_POST['password'] == PASSWORD){
     header('location:?');
 }
 if(!isset($_SESSION['ok'])){
-    exit('
- <!DOCTYPE html>
+    exit('<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
