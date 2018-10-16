@@ -6,7 +6,27 @@ if(isset($_POST['password']) &&$_POST['name']&& $_POST['password'] == PASSWORD&&
     header('location:?');
 }
 if(!isset($_SESSION['ok'])){
-    exit(LOGINHTML);
+    exit('<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="Login.css"/>
+</head>
+<body>
+<center>
+    <p id="login">
+    <h1>登陆</h1>
+    <form method="post" style="margin:0px auto;">
+        <input type="text" required="required" placeholder="用户名" name="name"></input>
+        <br>
+        <input type="password" required="required" placeholder="密码" name="password"></input>
+        <button class="but" type="submit">登录</button>
+    </form>
+    </p>
+</center>
+</body>
+</html>');
 }
 if(!file_exists('./config.php')){
       header('Location: ./install.php');

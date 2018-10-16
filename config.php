@@ -1,5 +1,4 @@
 <?php
-header("Content-type:text/html;charset=utf-8")£»
 define('ROOT_PART', Root_part());
 define('APIKEY', 'AIzaSyB5zY2fq6YRSMxF7HwGb8rEQ8VVRxiO6ps');
 define('GJ_CODE', 'HK');
@@ -12,6 +11,7 @@ define('PASSWORD', 'admin');
 define('LOGINHTML', '<!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Login</title>
     <link rel="stylesheet" type="text/css" href="Login.css"/>
 </head>
