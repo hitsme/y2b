@@ -1,6 +1,5 @@
 <?php
 include("./lib.php");
-header('Content-Type:text/html;charset=utf-8')
 session_start();
 if(isset($_POST['password']) &&$_POST['name']&& $_POST['password'] == PASSWORD&&$_POST['name'] == NAME){
     $_SESSION['ok'] = 1;
