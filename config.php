@@ -1,10 +1,10 @@
 <?php
 define('ROOT_PART', Root_part());
-define('APIKEY', 'AIzaSyB5xlrKGEQa3r8nzwy_32CwprKpO7ftS7A');
+define('APIKEY', 'AIzaSyCVkRcSiF0KmLCwmoo4edtw0vnSykCvFcc');
 define('GJ_CODE', 'US');
-define('SITE_NAME', 'Hitsme');
-define('TITLENAME', 'Hitsme');
-define('EN2DEKEY', '32123wwerwertgfdgds');
+define('SITE_NAME', 'y2b');
+define('TITLENAME', 'y2b');
+define('EN2DEKEY', '32123wwerwer323tgfdgds');
 define('EMAIL', '1334347212@qq.com');
 define('NAME', 'admin');
 define('PASSWORD', 'admin');
