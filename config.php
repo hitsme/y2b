@@ -1,13 +1,13 @@
 <?php
 define('ROOT_PART', Root_part());
-define('APIKEY', 'AIzaSyCVkRcSiF0KmLCwmoo4edtw0vnSykCvFcc');
+define('APIKEY', 'AIzaSyAhTrjENDYCd1MbruiijWeqG2qs5kktAGo');
 define('GJ_CODE', 'US');
-define('SITE_NAME', 'y2b');
-define('TITLENAME', 'y2b');
-define('EN2DEKEY', '32123wwerwer323tgfdgds');
-define('EMAIL', '1334347212@qq.com');
-define('NAME', 'admin');
-define('PASSWORD', 'admin');
+define('SITE_NAME', 'Batcave');
+define('TITLENAME', 'Batcave');
+define('EN2DEKEY', 'Batcave1031ssrx1566xuechou');
+define('EMAIL', 'allblackmud@hotmail.com');
+define('NAME', 'Batcave');
+define('PASSWORD', '1566xuechou');
 define('LOGINHTML', '<!DOCTYPE html>
 <html lang="en">
 <head>
